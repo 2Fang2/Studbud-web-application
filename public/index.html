@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="description" content="" />
+	<!-- This is the reset default style -->
+	<link rel="stylesheet" href="scss/reset.scss">
+	<!-- This is the main pages style -->
+	<link rel="stylesheet" href="scss/main.scss">
+	<!-- This is to view window variation style -->
+	<link rel="stylesheet" href="scss/media.scss">
+</head>
+
+<body>
+	<div class="container">
+		<!-- This is the page mask -->
+		<div class="container-mask"></div>
+		<div class="left">
+			<!-- This is the logo for the studbud -->
+			<a href="./index.html" class="logo">STUDBUD</a>
+			<!-- The navigation bar for the 5 main pages -->
+			<nav>
+				<ul>
+					<li class="active">
+						<a href="index.html" class="d-flex d-flex-aic">
+							<div class="icon">
+								<img src="images/home (1).png" class="icon1" alt="">
+								<img src="images/home.png" class="icon2" alt="">
+							</div>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="calendar.html" class="d-flex d-flex-aic">
+							<div class="icon">
+								<img src="images/calendar.png" class="icon1" alt="">
+								<img src="images/calendar (1).png" class="icon2" alt="">
+							</div>
+							Calendar
+						</a>
+					</li>
+					<li>
+						<a href="readinglist.html" class="d-flex d-flex-aic">
+							<div class="icon">
+								<img src="images/reading.png" class="icon1" alt="">
+								<img src="images/reading (1).png" class="icon2" alt="">
+							</div>
+							Reading list
+						</a>
+					</li>
+					<li>
+						<a href="tools.html" class="d-flex d-flex-aic">
+							<div class="icon">
+								<img src="images/tool.png" class="icon1" alt="">
+								<img src="images/tool (1).png" class="icon2" alt="">
+							</div>
+							Tools
+						</a>
+					</li>
+					<li>
+						<a href="flashcards.html" class="d-flex d-flex-aic">
+							<div class="icon">
+								<img src="images/flashcard.png" class="icon1" alt="">
+								<img src="images/flashcards.png" class="icon2" alt="">
+							</div>
+							Flashcards
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- This is the logout icon -->
+			<div class="logout">
+				<a href="" class="d-flex">
+					<img src="images/logout (1).png" class="logout-img1" alt="">
+					<img src="images/logout.png" class="logout-img2" alt="">
+					logout
+				</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="toolbar d-flex d-flex-aic d-flex-jcsb">
+				<!-- Setting the home page title -->
+				<span class="page-title">Home</span>
+				<!-- <form action="" class="d-flex d-flex-aic d-flex-jcsb">
+					<input type="text" placeholder="Search">
+					<button></button>
+				</form> -->
+				<!-- Here are user's name and picture and mobile's menu -->
+				<div class="d-flex d-flex-aic">
+					<div class="info d-flex d-flex-aic d-flex-jcsb">
+						<img src="images/portrait.png" alt="">
+						<span>Emily</span>
+					</div>
+					<img src="images/menu.png" class="menu" alt="">
+				</div>
+			</div>
+			<!-- Starting the page content -->
+			<div class="content home">
+				<div class="time-task d-flex d-flex-aic d-flex-jcsb">
+					<div class="time text-c">
+						<!-- Setting the system time -->
+						<p class="todayTime"></p>
+						<p>welcome back to Studbud</p>
+					</div>
+					<div class="today-task">
+						<!-- This is the today task info table header -->
+						<div class="table-head d-flex d-flex-aic d-flex-jcsb">
+							<span>Today's task</span>
+							<span>Status</span>
+							<span>Due date</span>
+						</div>
+						<!-- This is the today task info table body -->
+						<div class="table-body" id="tableBody"></div>
+					</div>
+				</div>
+				<!-- Setting the Task board -->
+				<div class="task-board">
+					<p class="task-board-title">Task board</p>
+					<div class="task-list d-flex d-flex-aifs d-flex-jcsb" id="task"></div>
+					<span class="add-task">+ Add task</span>
+				</div>
+			</div>
+			<!-- The end of the page content -->
+		</div>
+	</div>
+
+	<!-- add / edit Task board  -->
+	<div class="modal">
+		<input type="hidden" id="session-id">
+		<input type="hidden" id="task-id">
+		<div class="mask"></div>
+		<div class="modal-task">
+			<div class="modal-head d-flex d-flex-aic d-flex-jcsb">
+				<!-- This is the task title -->
+				<span class="taskModalTitle"></span>
+				<!-- This is the modal close -->
+				<span id="close">x</span>
+			</div>
+			<div class="modal-body">
+				<!-- This is the parameter Session -->
+				<div class="row d-flex d-flex-aic d-flex-fdc">
+					<label for="session">Session</label>
+					<select name="session" id="session"></select>
+				</div>
+				<!-- This is the parameter Title -->
+				<div class="row d-flex d-flex-aic d-flex-fdc">
+					<label for="title">Title</label>
+					<input type="text" name="title" id="title">
+				</div>
+				<!-- This is the parameter Planned duration time -->
+				<div class="row d-flex d-flex-aic d-flex-fdc">
+					<label for="time">Planned duration</label>
+					<input type="time" name="time" id="time" placeholder="Oh 25 min">
+				</div>
+				<!-- This is the parameter frame startDate / dueDate -->
+				<div class="row d-flex d-flex-aic d-flex-fdc">
+					<label for="timeFrame">Time frame</label>
+					<div class="d-flex d-flex-aic d-flex-jcsb">
+						<input type="date" name="startDate" id="startDate">
+						<input type="date" name="dueDate" id="dueDate">
+					</div>
+				</div>
+				<!-- This is the parameter description -->
+				<div class="row">
+					<textarea name="description" id="description" placeholder="Description"></textarea>
+				</div>
+				<!-- This is the parameter Grade -->
+				<div class="row d-flex d-flex-aic d-flex-fdc">
+					<label for="grade">Grade</label>
+					<select name="grade" id="grade">
+						<option value="Low">Low</option>
+						<option value="Med">Med</option>
+						<option value="High">High</option>
+					</select>
+				</div>
+				<div class="row d-flex d-flex-aic d-flex-jcsb">
+					<!-- The button of the modal Cancel -->
+					<button id="cancel">Cancel</button>
+					<!-- The button of the modal Save -->
+					<button id="save">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- TThis is the common javascript -->
+	<script src="js/script.js"></script>
+	<!-- This is the home javascript -->
+	<script src="js/index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tools</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="" />
+    <!-- This is the reset default style -->
+    <link rel="stylesheet" href="scss/reset.scss">
+    <!-- This is the main pages style -->
+    <link rel="stylesheet" href="scss/main.scss">
+    <!-- This is to view window variation style -->
+    <link rel="stylesheet" href="scss/media.scss">
+</head>
+
+<body>
+    <div class="container">
+        <!-- This is the page mask -->
+        <div class="container-mask"></div>
+        <div class="left">
+            <!--This is the logo for the studbud -->
+            <a href="./index.html" class="logo">STUDBUD</a>
+            <!-- The navigation bar for the 5 main pages -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="images/home (1).png" class="icon1" alt="">
+                                <img src="images/home.png" class="icon2" alt="">
+                            </div>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="images/calendar.png" class="icon1" alt="">
+                                <img src="images/calendar (1).png" class="icon2" alt="">
+                            </div>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="readinglist.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="images/reading.png" class="icon1" alt="">
+                                <img src="images/reading (1).png" class="icon2" alt="">
+                            </div>
+                            Reading list
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="tools.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="images/tool.png" class="icon1" alt="">
+                                <img src="images/tool (1).png" class="icon2" alt="">
+                            </div>
+                            Tools
+                        </a>
+                    </li>
+                    <li>
+                        <a href="flashcards.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="images/flashcard.png" class="icon1" alt="">
+                                <img src="images/flashcards.png" class="icon2" alt="">
+                            </div>
+                            Flashcards
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- This is the logout icon-->
+            <div class="logout">
+                <a href="" class="d-flex">
+                    <img src="images/logout (1).png" class="logout-img1" alt="">
+                    <img src="images/logout.png" class="logout-img2" alt="">
+                    logout
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="toolbar d-flex d-flex-aic d-flex-jcsb">
+                <!-- Setting the tools page title -->
+                <span class="page-title">Tools</span>
+                <!-- <form action="" class="d-flex d-flex-aic d-flex-jcsb">
+					<input type="text" placeholder="Search">
+					<button></button>
+				</form> -->
+                <!-- THere are user' name and picture and mobile's menu icon  -->
+                <div class="d-flex d-flex-aic">
+                    <div class="info d-flex d-flex-aic d-flex-jcsb">
+                        <img src="images/portrait.png" alt="">
+                        <span>Emily</span>
+                    </div>
+                    <img src="images/menu.png" class="menu" alt="">
+                </div>
+            </div>
+            <!-- Starting the page content -->
+            <div class="content tools">
+                <div class="transparency">
+                    <!-- This is the music player -->
+                    <div class="music">
+                        <div class="music-head d-flex d-flex-aic d-flex-jcsb">
+                            <div class="music-head-left d-flex d-flex-aic">
+                                <img src="images/music.png" alt="">
+                                <span class="music-title">Music</span>
+                            </div>
+                            <span class="music-del">x</span>
+                        </div>
+                        <div class="music-list"></div>
+                    </div>
+                    <!-- Setting the pomodoro timer -->
+                    <div class="pom d-flex d-flex-aife d-flex-jcfd">
+                        <div>
+                            <div class="pom-head">
+                                <span class="active">Pomodoro</span>
+                                <span>Short break</span>
+                                <span>Long break</span>
+                            </div>
+                            <div class="pom-time">25:00</div>
+                            <button class="star-stop">Start/Stop</button>
+                            <button class="reset">Reset</button>
+                            <div class="pom-auto d-flex d-flex-aic d-flex-jcc">
+                                <span>Auto-transition Timer</span>
+                                <input type="checkbox" id="timeSet">
+                            </div>
+                            <div class="pom-set">
+                                <div class="pom-set-title d-flex d-flex-aic d-flex-jcsb">
+                                    <span>Pomodoro</span>
+                                    <span>Short break</span>
+                                    <span>Long break</span>
+                                </div>
+                                <div class="pom-set-inp d-flex d-flex-aic d-flex-jcsb">
+                                    <input type="text" class="pomodoro" id="pomodoro">
+                                    <input type="text" class="shortbreak" id="shortbreak">
+                                    <input type="text" class="longbreak" id="longbreak">
+                                </div>
+                                <button class="edit">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="images/music.png" class="music-btn" alt="">
+                </div>
+            </div>
+            <!-- The end of the page content -->
+        </div>
+    </div>
+    <!-- This is the tools javascript -->
+    <script src="js/tools.js"></script>
+    <!-- This is the common javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
