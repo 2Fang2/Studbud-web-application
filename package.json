@@ -1,0 +1,27 @@
+{
+  "name": "11278",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "parcel": "^2.5.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "images": "^3.2.4"
+  }
+}
