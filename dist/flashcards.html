@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flashcards</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="">
+    <!-- This is the reset default style -->
+    <link rel="stylesheet" href="/reset.6b25dbe0.css">
+    <!-- This is the main pages style -->
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
+    <!-- This is to view window variation style -->
+    <link rel="stylesheet" href="/media.48a39aa9.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- This is the page mask -->
+        <div class="container-mask"></div>
+        <div class="left">
+            <!-- This is the logo for the studbud -->
+            <a href="/index.html" class="logo">STUDBUD</a>
+            <!-- The navigation bar for the 5 main pages -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="/home (1).c4971759.png" class="icon1" alt="">
+                                <img src="/home.cea49ce4.png" class="icon2" alt="">
+                            </div>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/calendar.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="/calendar.ec397456.png" class="icon1" alt="">
+                                <img src="/calendar (1).7899c6c4.png" class="icon2" alt="">
+                            </div>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/readinglist.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="/reading.14fa02d9.png" class="icon1" alt="">
+                                <img src="/reading (1).5e223752.png" class="icon2" alt="">
+                            </div>
+                            Reading list
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tools.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="/tool.99a3c866.png" class="icon1" alt="">
+                                <img src="/tool (1).8f74d0f5.png" class="icon2" alt="">
+                            </div>
+                            Tools
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="/flashcards.html" class="d-flex d-flex-aic">
+                            <div class="icon">
+                                <img src="/flashcard.ac624502.png" class="icon1" alt="">
+                                <img src="/flashcards.197e83f7.png" class="icon2" alt="">
+                            </div>
+                            Flashcards
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- This is the logout icon-->
+            <div class="logout">
+                <a href="" class="d-flex">
+                    <img src="/logout (1).4650120e.png" class="logout-img1" alt="">
+                    <img src="/logout.42bd6032.png" class="logout-img2" alt="">
+                    logout
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="toolbar d-flex d-flex-aic d-flex-jcsb">
+                <!-- set page title -->
+                <span class="page-title">Flashcards</span>
+                <!-- <form action="" class="d-flex d-flex-aic d-flex-jcsb">
+					<input type="text" placeholder="Search">
+					<button></button>
+				</form> -->
+                <!-- Here are user's name and picture and mobile's menu -->
+                <div class="d-flex d-flex-aic">
+                    <div class="info d-flex d-flex-aic d-flex-jcsb">
+                        <img src="/portrait.ba24fde4.png" alt="">
+                        <span>Emily</span>
+                    </div>
+                    <img src="/menu.f5c051c5.png" class="menu" alt="">
+                </div>
+            </div>
+            <!-- Starting the page content -->
+            <div class="content flashcards">
+                <div class="transparency">
+                    <div class="flashcards-top d-flex d-flex-aic d-flex-jcfd">
+                        <!--This is the  new flashcards item -->
+                        <button class="create">New</button>
+                        <!-- This is the delete flashcards list -->
+                        <button class="delete">Delete</button>
+                    </div>
+                    <!-- This is the flashcards form -->
+                    <div class="flashcards-form">
+                        <!-- This is the flashcards form title -->
+                        <p class="flashcards-form-title">Create Flashcard</p>
+                        <!-- This is the parameter Question -->
+                        <div class="form-row">
+                            <label for="question">Question</label>
+                            <input type="text" name="question" id="question">
+                        </div>
+                        <!-- This is the parameter Answer -->
+                        <div class="form-row">
+                            <label for="answer">Answer</label>
+                            <input type="text" name="answer" id="answer">
+                        </div>
+                        <!-- This is the flashcards form save close -->
+                        <div class="form-row">
+                            <button class="save">Save</button>
+                            <button class="close">Close</button>
+                        </div>
+                    </div>
+                    <!-- This is the flashcards list content -->
+                    <div class="flashcards-list d-flex d-flex-fww"></div>
+                </div>
+            </div>
+            <!-- The end of the page content -->
+        </div>
+    </div>
+
+    <!-- This is the flashcards javascript -->
+    <script src="/flashcards.528d3b3f.js"></script>
+    <!-- This is the common javascript -->
+    <script src="/script.d573be0b.js"></script>
+</body>
+
+</html>
