@@ -83,10 +83,10 @@ pomHead.forEach((v, i) => {
 // starStop pom
 starStop.addEventListener("click", () => {
     let num = pomTime.innerHTML.split(":")[0] == Number(toolsList[isToolsIndex].value) ? Number(toolsList[isToolsIndex].value) * 60 : (Number(pomTime.innerHTML.split(":")[0]) * 60 + Number(pomTime.innerHTML.split(":")[1]));
-    if (changeTime) {  //结束
+    if (changeTime) {  //END
         changeTime = false;
         clearInterval(timeDown);
-    } else {  //开始
+    } else {  //START
         changeTime = true;
         achieveTime(num);
     }
