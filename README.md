@@ -2,7 +2,7 @@
 Studbud is mainly designed for the target group of online students with poor memory and want to review their study, who may be 22-30 years old, but this could also include other students who are less productive. For the functionality of this web page, it is mainly divided into five parts, namely: Home page, Calendar page, Reading list page, Tools page and flashcards page. Comparing A2's Web App prototype and some feedback from the tutor, I changed some ideas and added important details in this web application design.
 # What contents would I discuss next?
   * Comparison：I will explain the change between previous web prototype and the current prototype.
-  * Design principles: The 4 main design . 
+  * Design principles: The 4 main design principles. 
   * How I overcome to these challenges. 
   * References.
 ## 1.Comparison
