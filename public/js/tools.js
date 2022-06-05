@@ -2,22 +2,22 @@
 let musicList = [
     {
         "id": 0,
-        "name": "Bloodstream",
-        "author": "The Chainsmokers",
+        "name": "No Time",
+        "author": "Lastlings",
         "imgs": "images/home.png",
         "music": "music/1.mp3"
     },
     {
         "id": 1,
-        "name": "Bloodstream1",
-        "author": "The Chainsmokers1",
+        "name": "Blinding Lights",
+        "author": "The Weeknd",
         "imgs": "images/home.png",
         "music": "music/2.mp3"
     },
     {
         "id": 2,
-        "name": "Bloodstream2",
-        "author": "The Chainsmokers2",
+        "name": "Music 3",
+        "author": "Enrasta",
         "imgs": "images/home.png",
         "music": "music/3.mp3"
     }
