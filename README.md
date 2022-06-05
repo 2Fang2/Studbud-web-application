@@ -40,3 +40,7 @@ In the end, I built a relatively complete web application through some Youtube a
      * 4）Pexels. (n.d.). Retrieved April 16, 2022, from https://www.pexels.com/zh-cn/
      * 5）Web application vs website - what's the difference? (2019, May 01). Retrieved April 16, 2022, from https://www.techuz.com/blog/web-application-vs-website-whats-the-difference/
      * 6）Unsplash. (n.d.). 350+ study pictures & images [HQ]: Download free images & stock photos on unsplash. Retrieved April 16, 2022, from https://unsplash.com/s/photos/study
+     * 7）Admin. (2020, July 07). Lastlings - no time MP3 download. Retrieved June 5, 2022, from https://mp3quack.org/2020/07/03/lastlings-no-time-mp3-download/
+     * 8）Admin. (2021, April 21). The weeknd - blinding lights MP3. Retrieved June 5, 2022, from https://mp3quack.org/2020/04/16/the-weeknd-blinding-lights-mp3/
+     * 9）Enrasta - Джованна. (n.d.). Retrieved June 5, 2022, from https://muztrack.net/10990-enrasta-dzhovanna
+   
