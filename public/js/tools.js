@@ -4,21 +4,21 @@ let musicList = [
         "id": 0,
         "name": "No Time",
         "author": "Lastlings",
-        "imgs": "images/home.png",
+        "imgs": "images/player.png",
         "music": "music/1.mp3"
     },
     {
         "id": 1,
         "name": "Blinding Lights",
         "author": "The Weeknd",
-        "imgs": "images/home.png",
+        "imgs": "images/player.png",
         "music": "music/2.mp3"
     },
     {
         "id": 2,
         "name": "Music 3",
         "author": "Enrasta",
-        "imgs": "images/home.png",
+        "imgs": "images/player.png",
         "music": "music/3.mp3"
     }
 ]
